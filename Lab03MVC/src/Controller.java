@@ -13,7 +13,7 @@ public class Controller {
     }
     
     void encryptionButtonClicked(){
-<<<<<<< HEAD
+
         try {
         this.encryptionEngine.setEncryptionkey(Integer.parseInt( this.veiw.getEncryptionKey()));
         this.veiw.setOutputText(this.encryptionEngine.encrypt(this.veiw.getInputText()));
@@ -35,19 +35,38 @@ public class Controller {
         if (this.encryptionEngine.checkForLetters(this.veiw.getInputText()) == false) {
 	        this.veiw.setOutputText("Wrong data type in text!");
 	    }
-=======
-        this.encryptionEngine.setEncryptionkey(Integer.parseInt( this.veiw.getEncryptionKey()));
-        this.veiw.setOutputText(this.encryptionEngine.encrypt(this.veiw.getInputText()));
     }
 
-    void decryptionButtonClicked(){
-    this.encryptionEngine.setEncryptionkey(Integer.parseInt( this.veiw.getEncryptionKey()));
-    this.veiw.setOutputText(this.encryptionEngine.decrypt(this.veiw.getInputText()));
->>>>>>> e481176478bcff3f97607e58af14171d09ecc89f
-    }
 }
 
 
+// Here is some test for the lab, i couldnt run the Junit test in Visual Studio Code
+// class EncryptionEngineTest {
+	
+	
+// 	@Test
+// 	void testEncrypt() {
+// 		Controller controller = null;
+// 		EncryptionEngine e = new EncryptionEngine(controller);
+//         e.setEncryptionKey(3);
 
+// 		assertEquals(e.encrypt("ABC"), "DEF");
+// 		assertEquals(e.encrypt("XYZ"), "ABC");
+// 		assertEquals(e.encrypt("JonkopingJH"), "MrqnrslqjMK");
+// 		assertEquals(e.encrypt("InbyggdaSystem"), "LqebjjgdVbvwhp");
+// 		assertEquals(e.encrypt("OOSDevelopment"), "RRVGhyhorsphqw");
+// 	}
+// 	void testDecrypt() {
+// 		Controller controller = null;
+// 		EncryptionEngine e = new EncryptionEngine(controller);
+//         e.setEncryptionKey(3);
+	
+// 		assertEquals(e.decrypt("DEF"), "ABC");
+// 		assertEquals(e.decrypt("ABC"), "XYZ");
+// 		assertEquals(e.decrypt("MrqnrslqjMK"), "JonkopingJH");
+//      	assertEquals(e.decrypt("LqebjjgdVbvwhp"), "InbyggdaSystem");	
+// 		assertEquals(e.decrypt("RRVGhyhorsphqw"), "OOSDevelopment");
+		
+// 	}
 
-
+// }
