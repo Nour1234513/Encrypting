@@ -14,6 +14,7 @@ public class EncryptionEngine {
      return encryptionkey; 
    }
 
+<<<<<<< HEAD
 public boolean checkForLetters (String textinput){
     for(int x=0;x<textinput.length();x++){
         if(Character.isLetter (textinput.charAt(x)))
@@ -32,12 +33,23 @@ public boolean checkForLetters (String textinput){
 //     return true;
 // }
 
+=======
+>>>>>>> e481176478bcff3f97607e58af14171d09ecc89f
    public String encrypt(String inputText) {
     String output = "";
     for (int x = 0; x < inputText.length(); x++) {
         char w = inputText.charAt(x);
         int xi =w;
         if (w >= 'a' && w <= 'z') {
+<<<<<<< HEAD
+=======
+            // xi-=97;
+            // xi+=getEncryptionkey();
+            // xi=xi%26;
+            // xi+=97;
+            // w=(char)xi;
+            // char myChar = 
+>>>>>>> e481176478bcff3f97607e58af14171d09ecc89f
             output += (char) ((((xi - 'a') + encryptionkey) % 26) + 'a');
         }
         else if (w >= 'A' && w <= 'Z') {

@@ -13,6 +13,7 @@ public class Controller {
     }
     
     void encryptionButtonClicked(){
+<<<<<<< HEAD
         try {
         this.encryptionEngine.setEncryptionkey(Integer.parseInt( this.veiw.getEncryptionKey()));
         this.veiw.setOutputText(this.encryptionEngine.encrypt(this.veiw.getInputText()));
@@ -34,6 +35,15 @@ public class Controller {
         if (this.encryptionEngine.checkForLetters(this.veiw.getInputText()) == false) {
 	        this.veiw.setOutputText("Wrong data type in text!");
 	    }
+=======
+        this.encryptionEngine.setEncryptionkey(Integer.parseInt( this.veiw.getEncryptionKey()));
+        this.veiw.setOutputText(this.encryptionEngine.encrypt(this.veiw.getInputText()));
+    }
+
+    void decryptionButtonClicked(){
+    this.encryptionEngine.setEncryptionkey(Integer.parseInt( this.veiw.getEncryptionKey()));
+    this.veiw.setOutputText(this.encryptionEngine.decrypt(this.veiw.getInputText()));
+>>>>>>> e481176478bcff3f97607e58af14171d09ecc89f
     }
 }
 
