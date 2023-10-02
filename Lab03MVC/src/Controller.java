@@ -52,10 +52,12 @@ public class Controller {
 
 // 		assertEquals(e.encrypt("ABC"), "DEF");
 // 		assertEquals(e.encrypt("XYZ"), "ABC");
-// 		assertEquals(e.encrypt("JonkopingJH"), "MrqnrslqjMK");
 // 		assertEquals(e.encrypt("InbyggdaSystem"), "LqebjjgdVbvwhp");
-// 		assertEquals(e.encrypt("OOSDevelopment"), "RRVGhyhorsphqw");
+
+//         e.setEncryptionKey(3);
+// 		assertEquals(e.encrypt("Hello"), "Dahhk");
 // 	}
+
 // 	void testDecrypt() {
 // 		Controller controller = null;
 // 		EncryptionEngine e = new EncryptionEngine(controller);
@@ -63,10 +65,10 @@ public class Controller {
 	
 // 		assertEquals(e.decrypt("DEF"), "ABC");
 // 		assertEquals(e.decrypt("ABC"), "XYZ");
-// 		assertEquals(e.decrypt("MrqnrslqjMK"), "JonkopingJH");
-//      	assertEquals(e.decrypt("LqebjjgdVbvwhp"), "InbyggdaSystem");	
-// 		assertEquals(e.decrypt("RRVGhyhorsphqw"), "OOSDevelopment");
-		
+//      assertEquals(e.decrypt("LqebjjgdVbvwhp"), "InbyggdaSystem");	
+
+//         e.setEncryptionKey(22);
+// 		assertEquals(e.decrypt("Dahhk"), "Hello");
 // 	}
 
 // }

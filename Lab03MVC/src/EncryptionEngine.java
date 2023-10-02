@@ -19,7 +19,7 @@ public boolean checkForLetters (String textinput){
     for(int x=0;x<textinput.length();x++){
         if(Character.isLetter (textinput.charAt(x)))
         continue;
-        else return false;
+        else throw new NumberFormatException(); 
     }
     return true;
 }
@@ -39,10 +39,6 @@ public boolean checkForLetters (String textinput){
 
             // output += myChar;'
         output += (char) ((((xi - 'A') + encryptionkey) % 26) + 'A');
-        }
-        else {
-            
-            throw new NumberFormatException();  
         }
     }
 
@@ -64,10 +60,6 @@ public boolean checkForLetters (String textinput){
 
         else if (w >= 'A' && w <= 'Z') {
         output += (char)  ((xi - 'A' - getEncryptionkey() + 26)  % 26 + 'A');
-        }
-
-        else {
-            throw new NumberFormatException();  
         }
     }
     return output;
